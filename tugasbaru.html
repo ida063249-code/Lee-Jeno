@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-pop Shop</title>
+
+    <style>
+        /* GENERAL STYLE */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* HEADER */
+        header {
+            background: #ee4d2d;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .search {
+            display: flex;
+            width: 40%;
+        }
+
+        .search input {
+            width: 80%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search button {
+            width: 20%;
+            background: #d84324;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .search button:hover {
+            background: #bf3a1d;
+        }
+
+        .menu a {
+            margin-left: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* BANNER */
+        .banner {
+            background: url("https://via.placeholder.com/1200x400") center/cover no-repeat;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        /* PRODUCT SECTION */
+        .product-section {
+            padding: 20px 30px;
+        }
+
+        .product-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform .2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #ee4d2d;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            background: #ee4d2d;
+            border: none;
+            padding: 8px 14px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background: #d84324;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">K-pop Shop</div>
+
+        <div class="search">
+            <input type="text" placeholder="Cari album, merch, atau idol favoritmu...">
+            <button>Cari</button>
+        </div>
+
+        <div class="menu">
+            <a href="#">Login</a>
+            <a href="#">Daftar</a>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h2>🔥 Promo Spesial K-Pop Hari Ini!</h2>
+        <p>Diskon hingga 70% untuk semua album & merchandise!</p>
+    </section>
+
+    <!-- PRODUCT SECTION -->
+    <section class="product-section">
+        <h2>Produk Terpopuler</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="album bts.jpeg" width="300px">
+                <h3>Album BTS – BE</h3>
+                <p class="price">Rp 320.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="lightstick blacpink.jpeg" width="300px">
+                <h3>Lightstick BLACKPINK</h3>
+                <p class="price">Rp 450.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="album stray kidz.jpeg" width="300px">
+                <h3>Album Stray Kids – MAXIDENT</h3>
+                <p class="price">Rp 290.000</p>
+                <button>Beli</button>
+            </div>
+
+            <div class="product-card">
+                <img src="poater twice.jpeg" width="300px">
+                <h3>Poster TWICE – Set</h3>
+                <p class="price">Rp 85.000</p>
+                <button>Beli</button>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
+
