@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlamGram - Colorful Edition</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Warna tema */
+        :root {
+            --pink: #ff69b4;
+            --purple: #a854f5;
+            --orange: #ff914d;
+            --white: #ffffff;
+        }
+
+        body {
+            background-color: #fff8fc;
+            color: #333;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Navbar gradien */
+        .navbar {
+            background: linear-gradient(90deg, var(--pink), var(--purple), var(--orange));
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        /* Postingan */
+        .profile-img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--pink);
+        }
+
+        .feed-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .post-card {
+            border: 1px solid #eee;
+            background: #ffffff;
+            border-radius: 12px;
+        }
+
+        .username {
+            font-weight: bold;
+            color: var(--purple);
+        }
+
+        /* Icon */
+        .icon {
+            font-size: 1.4rem;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(90deg, var(--purple), var(--pink));
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#">AlamGram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Eksplor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Profil</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FEED -->
+    <div class="container mt-4">
+
+        <!-- POST 1 -->
+        <div class="card post-card mb-4 p-3 shadow-sm">
+            <div class="d-flex align-items-center mb-3">
+                <img src="langit senja di pagi hari.jpg" class="profile-img me-3">
+                <span class="username">alam_pink</span>
+            </div>
+
+            <img src="langit senja di pagi hari.jpg" class="feed-img">
+
+            <div class="mt-3">
+                <span class="icon">❤️</span>
+                <span class="icon">💬</span>
+                <span class="icon">📤</span>
+            </div>
+
+            <p class="mt-2"><b>alam_pink:</b> Langit pagi ini berwarna pink lembut seperti mimpi.</p>
+        </div>
+
+        <!-- POST 2 -->
+        <div class="card post-card mb-4 p-3 shadow-sm">
+            <div class="d-flex align-items-center mb-3">
+                <img src="senja.jpg" class="profile-img me-3">
+                <span class="username text-warning">alam_orange</span>
+            </div>
+
+            <img src="senja.jpg" class="feed-img">
+
+            <div class="mt-3">
+                <span class="icon">❤️</span>
+                <span class="icon">💬</span>
+                <span class="icon">📤</span>
+            </div>
+
+            <p class="mt-2"><b>alam_orange:</b> Senja oranye yang hangat dan penuh cerita.</p>
+        </div>
+
+        <!-- POST 3 -->
+        <div class="card post-card mb-4 p-3 shadow-sm">
+            <div class="d-flex align-items-center mb-3">
+                <img src="pagi.jpg" class="profile-img me-3">
+                <span class="username text-primary">alam_biru</span>
+            </div>
+
+            <img src="pagi.jpg" class="feed-img">
+
+            <div class="mt-3">
+                <span class="icon">❤️</span>
+                <span class="icon">💬</span>
+                <span class="icon">📤</span>
+            </div>
+
+            <p class="mt-2"><b>alam_purple:</b> langit di pagi hari  yang memanjakan mata.</p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center p-3 mt-4">
+        <p>&copy; 2025 AlamGram — Pink | White | Orange | Purple Edition</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
